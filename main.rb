@@ -3,33 +3,33 @@ def bubble_sort(arr)
   k = 0
   flag = false
 
-  while i < (arr.length - 1) do
-    while k < (arr.length - 1 - i) do
-      if arr[k] > arr[k+1]
-        arr[k], arr[k+1] = arr[k+1], arr[k]
+  while i < (arr.length - 1)
+    while k < (arr.length - 1 - i)
+      if arr[k] > arr[k + 1]
+        arr[k], arr[k + 1] = arr[k + 1], arr[k]
         flag = true
-      end  
-      k+=1
+      end
+      k += 1
     end
     break if flag == false
-    i+=1   
+
+    i += 1
   end
   arr
 end
-
 
 def bubble_sort_by(arr)
   i = 0
   k = 0
 
-  while i < (arr.length - 1) do
+  while i < (arr.length - 1)
 
     flag = false
 
-    while k < (arr.length - 1 - i) do
+    while k < (arr.length - 1 - i)
 
-      if yield(arr[k], arr[k+1]) > 0
-        arr[k], arr[k+1] = arr[k+1], arr[k]
+      if yield(arr[k], arr[k + 1]).positive?
+        arr[k], arr[k + 1] = arr[k + 1], arr[k]
         flag = true
       end
       k += 1
