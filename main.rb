@@ -11,11 +11,31 @@ def bubble_sort(arr)
       end  
       k+=1
     end
-    break if flag    
+    break if flag == false
     i+=1   
   end
   arr
 end
 
 
-p bubble_sort([2,1,4,3,6,5])
+def bubble_sort_by(arr)
+  i = 0
+  k = 0
+
+  while i < (arr.length - 1) do
+
+    flag = false
+
+    while k < (arr.length - 1 - i) do
+
+      if yield(arr[k], arr[k+1]) > 0
+        arr[k], arr[k+1] = arr[k+1], arr[k]
+        flag = true
+      end
+      k += 1
+    end
+    i += 1
+    break if flag == false
+  end
+  arr
+end
