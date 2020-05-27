@@ -2,16 +2,16 @@
 
 This is a collaborative project about building a bubble sort algorithm.
 
-![Bubble Sort Animation](Bubble-sort-example.gif)
+![Bubble Sort Animation](Bubble-sort-example-300px.gif)
 
 The purpose of the project is to implement Bubble sort algorithm with Ruby using yield and passing a block to a method. 
 
 ## Development
 
 * Run script
-```ruby
-ruby bubble_sort.rb
-```
+
++ ruby bubble_sort.rb
+
 
 # Built With
 
@@ -19,7 +19,7 @@ Ruby
 
 ## Live Demo
 
-[Live Demo Link](https://repl.it/@NiiazalyDzhumal/UnconsciousPrimeClosedsource)
+[Live Demo Link](https://repl.it/join/hrxwvzcj-8bts)
 
 # Prerequisites
 

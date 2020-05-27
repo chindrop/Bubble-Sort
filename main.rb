@@ -1,6 +1,6 @@
 def bubble_sort(arr)
   i = 0
-  p "size is : " + arr.size.to_s
+  p 'size is : ' + arr.size.to_s
   while i < (arr.size - 1)
     k = 0
     flag = false
