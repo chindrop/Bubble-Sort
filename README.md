@@ -9,7 +9,7 @@ The purpose of the project is to implement Bubble sort algorithm with Ruby using
 ## Development
 
 * Run script
-```
+```ruby
 ruby bubble_sort.rb
 ```
 
